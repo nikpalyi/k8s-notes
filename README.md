@@ -1,6 +1,18 @@
 # eval-docker-helm
 command for local testing docker image , helm
 
+
+```
+minikube start
+```
+
+In different terminal window/tab:
+```
+minikube tunnel
+```
+
+At the code repository's folder:
+
 ```
 minikube docker-env
 ```
