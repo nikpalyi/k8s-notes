@@ -1,5 +1,6 @@
-# eval-docker-helm
-command for local testing docker image , helm
+# Deploy Your Programs onto Minikube with Docker and Helm
+
+command for local testing an app with docker image , helm
 
 
 ```
@@ -15,6 +16,12 @@ At the code repository's folder:
 
 ```
 minikube docker-env
+```
+
+Create a namespace, in this case called 'pub':
+
+```
+kubectl create namespace pub
 ```
 
 ## Local testing, restart:
