@@ -1,6 +1,7 @@
 # Set ENV details
 
-Example: gpdes
+## Example: 
+gpdes
 
 NXT
 Cluster
