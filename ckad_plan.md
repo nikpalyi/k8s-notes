@@ -1,20 +1,27 @@
-# 1-month CKAD certification learning plan
+1-month CKAD certification learning plan
 
 ## Week 1: Understanding CKAD Exam and Core Concepts
 
-### Day 1-2: Research the CKAD certification, its format, and requirements. Familiarize yourself with the official Kubernetes documentation.
-###  Day 3-4: Review core Kubernetes concepts: Pods, Services, Deployments, ConfigMaps, Secrets, and Persistent Volumes.
-### Day 5-7: Practice creating and managing basic resources. Use the kubectl command-line tool for basic operations.
+### Day 1-2: 
+Research the CKAD certification, its format, and requirements. Familiarize yourself with the official Kubernetes documentation.
+###  Day 3-4: 
+Review core Kubernetes concepts: Pods, Services, Deployments, ConfigMaps, Secrets, and Persistent Volumes.
+### Day 5-7: 
+Practice creating and managing basic resources. Use the kubectl command-line tool for basic operations.
 
 ## Week 2: Application Lifecycle Management
 
-### Day 8-9: Learn about ReplicaSets and Deployments. Understand rolling updates and rollbacks.
-### Day 10-12: Explore Labels, Selectors, and Annotations. Understand how to use these effectively in resource definitions.
-### Day 13-14: Study Jobs and CronJobs for batch processing and scheduled tasks.
+### Day 8-9: 
+Learn about ReplicaSets and Deployments. Understand rolling updates and rollbacks.
+### Day 10-12:
+Explore Labels, Selectors, and Annotations. Understand how to use these effectively in resource definitions.
+### Day 13-14: 
+Study Jobs and CronJobs for batch processing and scheduled tasks.
 
 ## Week 3: Services and Networking
 
-### Day 15-17: Dive into Services: ClusterIP, NodePort, and LoadBalancer. Understand how to expose applications internally and externally.
+### Day 15-17: 
+Dive into Services: ClusterIP, NodePort, and LoadBalancer. Understand how to expose applications internally and externally.
 ### Day 18-20: Learn about Network Policies to control pod communication within the cluster.
 ### Day 21: Review all networking concepts and practice creating various networking configurations.
 
