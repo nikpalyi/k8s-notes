@@ -1,6 +1,5 @@
 # 1-month CKAD certification learning plan
 
-
 ## Week 1: Understanding CKAD Exam and Core Concepts
 
 ### Day 1-2: Research the CKAD certification, its format, and requirements. Familiarize yourself with the official Kubernetes documentation.
