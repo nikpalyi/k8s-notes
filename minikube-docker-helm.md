@@ -23,6 +23,15 @@ Create a namespace, in this case called 'pub':
 ```
 kubectl create namespace pub
 ```
+```
+kubectl config get-contexts
+```
+```
+kubectl config view
+```
+```
+kubectl config set-context minikube --namespace=pub --current
+```
 
 ## Local testing, restart:
 
