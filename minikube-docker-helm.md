@@ -52,5 +52,5 @@ sbt docker:publishLocal
 ```
 
 ```
-helm -n gpdcs upgrade --install gpd-configuration-service ./helm/gpd-configuration-service --values ./helm/gpd-configuration-service/dev-values.yaml
+helm -n gpdcs upgrade --install gpd-configuration-service ./helm/gpdcs --values ./helm/gpdcs/values.yaml
 ```
