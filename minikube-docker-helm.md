@@ -17,11 +17,15 @@ At the code repository's folder:
 ```
 minikube docker-env
 ```
+or just:
+```
+eval $(minikube -p minikube docker-env)
+```
 
 Create a namespace, in this case called 'pub':
 
 ```
-kubectl create namespace pub
+kubectl create namespace gpdcs
 ```
 ```
 kubectl config get-contexts
@@ -30,13 +34,13 @@ kubectl config get-contexts
 kubectl config view
 ```
 ```
-kubectl config set-context minikube --namespace=pub --current
+kubectl config set-context minikube --namespace=gpdcs
 ```
 
 ## Local testing, restart:
 
 ```
-helm -n pub uninstall publisher
+helm -n gpdcs uninstall gpd-configuration-service
 ```
 
 ```
@@ -48,5 +52,5 @@ sbt docker:publishLocal
 ```
 
 ```
-helm -n pub upgrade --install publisher ./helm/gpd-publisher --values ./helm/gpd-publisher/dev-values.yaml
+helm -n gpdcs upgrade --install gpd-configuration-service ./helm/gpd-configuration-service --values ./helm/gpd-configuration-service/dev-values.yaml
 ```
