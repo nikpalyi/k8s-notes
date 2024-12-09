@@ -54,5 +54,5 @@ helm -n gpdeps uninstall gpd-pricing-service
 ```
 
 ```
-helm -n gpdeps upgrade --install gpd-pricing-service ./helm/gpdcs --values ./helm/gpdeps/values.yaml
+helm -n gpdeps upgrade --install gpd-pricing-service ./helm/gpdeps --values ./helm/gpdeps/values.yaml
 ```
