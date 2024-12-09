@@ -15,11 +15,10 @@ minikube tunnel
 At the code repository's folder:
 
 ```
-minikube docker-env
-```
-or just:
-```
 eval $(minikube -p minikube docker-env)
+```
+```
+sbt docker:publishLocal
 ```
 
 Create a namespace, in this case called 'pub':
@@ -28,29 +27,32 @@ Create a namespace, in this case called 'pub':
 kubectl create namespace gpdcs
 ```
 ```
-kubectl config get-contexts
-```
-```
-kubectl config view
-```
-```
 kubectl config set-context minikube --namespace=gpdcs
 ```
 
-## Local testing, restart:
+## Local testing, uninstall, deploy, reinstall:
 
 ```
 helm -n gpdcs uninstall gpd-configuration-service
 ```
 
 ```
-eval $(minikube -p minikube docker-env)
-```
-
-```
-sbt docker:publishLocal
-```
-
-```
 helm -n gpdcs upgrade --install gpd-configuration-service ./helm/gpdcs --values ./helm/gpdcs/values.yaml
+```
+
+## For SGX(EPS):
+Create a namespace, in this case called 'pub':
+
+```
+kubectl create namespace gpdeps
+```
+```
+kubectl config set-context minikube --namespace=gpdeps
+```
+```
+helm -n gpdeps uninstall gpd-pricing-service
+```
+
+```
+helm -n gpdeps upgrade --install gpd-pricing-service ./helm/gpdcs --values ./helm/gpdeps/values.yaml
 ```
