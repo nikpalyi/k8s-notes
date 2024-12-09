@@ -30,7 +30,7 @@ kubectl create namespace gpdcs
 kubectl config set-context minikube --namespace=gpdcs
 ```
 
-## Local testing, uninstall, deploy, reinstall:
+## Local testing, uninstall, deploy, reinstall GPDCS:
 
 ```
 helm -n gpdcs uninstall gpd-configuration-service
