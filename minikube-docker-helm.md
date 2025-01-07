@@ -1,4 +1,4 @@
-# Deploy Your Programs onto Minikube with Docker and Helm
+# Deploy Apps with Minikube and Helm
 
 command for local testing an app with docker image , helm
 
