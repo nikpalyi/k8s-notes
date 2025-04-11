@@ -2,6 +2,9 @@
 
 command for local testing an app with docker image , helm
 
+```
+minikube delete --all --purge
+```
 
 ```
 minikube start
