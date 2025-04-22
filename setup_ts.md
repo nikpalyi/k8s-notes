@@ -3,18 +3,22 @@
 ```
 eval $(minikube -p minikube docker-env)
 ```
+### Create Namespace
+```
+kubetctl create ns jmeter
+```
 ### Configure Kubernetes Namespace
 
 ```
-kubectl config set-context --current --namespace=<your-namespace>
+kubectl config set-context --current --namespace=jmeter
 ```
 ### Uninstall Existing Helm Release
 ```
-helm -n <your-namespace> uninstall <release-name>
+helm -n jmeter uninstall <release-name>
 ```
 ### Install/Upgrade Helm Chart
 ```
-helm -n <your-namespace> upgrade --install <release-name> <chart-path> --values <values-file-path>
+helm -n jmeter upgrade --install gpdts-jmeter /Users/nikolett.palyi/Documents/DEV/gpdts-configrepo-aws-ppb/cdk/resources/gpdts --values /Users/nikolett.palyi/Documents/DEV/gpdts-configrepo-aws-ppb/cdk/resources/gpdts/values.yaml
 ```
 ### Copy JMeter Test Plans to Master Pod
 ```
