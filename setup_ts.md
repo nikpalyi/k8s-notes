@@ -1,7 +1,7 @@
 ### Set Up GPDTS Environment
 
 ```
-eval $(minikube -p <minikube-profile> docker-env)
+eval $(minikube -p minikube docker-env)
 ```
 ### Configure Kubernetes Namespace
 
